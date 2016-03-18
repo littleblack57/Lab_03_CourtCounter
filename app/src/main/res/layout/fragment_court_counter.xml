@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourtCounterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="隊名"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="0"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30sp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_twopoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="twopoints"
+            android:background="@android:color/holo_blue_bright"
+            android:text="2 points"
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_threepoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="threepoints"
+            android:text="3 points"
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_freeshot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="freeshot"
+            android:text="freeshot"
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+</FrameLayout>
